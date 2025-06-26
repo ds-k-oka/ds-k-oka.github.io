@@ -1,4 +1,5 @@
 const js2path = "https://ds-k-oka.github.io/bance/js/iframe_test/nest_2.js";
+//const js2path = "http://127.0.0.1:8881/js/iframe_test/nest_2.js";
 const midIframe = document.createElement("iframe");
 midIframe.width = "468";
 midIframe.height = "90";
@@ -13,8 +14,8 @@ midIframe.addEventListener("load", () => {
 
   // 孫iframe（最内）の構築
   const innerIframe = midDoc.createElement("iframe");
-  innerIframe.width = "500";
-  innerIframe.height = "100";
+  innerIframe.width = "468";
+  innerIframe.height = "90";
   innerIframe.style.border = "1px solid blue";
   midDoc.body.appendChild(innerIframe);
 
