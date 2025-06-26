@@ -3,6 +3,8 @@ const midIframe = document.createElement("iframe");
 midIframe.width = "468";
 midIframe.height = "90";
 midIframe.style.border = "1px solid gray";
+midIframe.scrolling = "yes";
+midIframe.style.overflow = "scroll";
 document.body.appendChild(midIframe);
 
 // 子iframeが読み込まれた後に処理を実行
@@ -11,8 +13,8 @@ midIframe.addEventListener("load", () => {
 
   // 孫iframe（最内）の構築
   const innerIframe = midDoc.createElement("iframe");
-  innerIframe.width = "460";
-  innerIframe.height = "85";
+  innerIframe.width = "500";
+  innerIframe.height = "100";
   innerIframe.style.border = "1px solid blue";
   midDoc.body.appendChild(innerIframe);
 
